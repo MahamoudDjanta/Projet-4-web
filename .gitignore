@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+public/build/
+public/hot/
+public/storage/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs and caches
+*.log
+npm-debug.log*
+yarn-debug.log*
+.phpunit.cache/
+.phpunit.result.cache
+.eslintcache
+.vite/
+.cache/
+coverage/
+
+# Laravel runtime files
+backend/storage/*.key
+backend/storage/pail/
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/logs/*
+!backend/storage/**/.gitignore
+backend/bootstrap/cache/*.php
+!backend/bootstrap/cache/.gitignore
+
+# Local IDE files
+.vscode/
+.idea/
+.fleet/
+.nova/
+.zed/
+
+# OS files
+.DS_Store
+Thumbs.db

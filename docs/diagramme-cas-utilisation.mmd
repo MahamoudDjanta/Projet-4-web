@@ -1,0 +1,64 @@
+flowchart LR
+  Admin([Admin])
+  Professeur([Professeur])
+  Parent([Parent])
+  Eleve([Élève])
+
+  SeConnecter((Se connecter))
+  VoirDashboard((Voir tableau de bord))
+  GererUtilisateurs((Gérer utilisateurs))
+  GererClasses((Gérer classes))
+  GererCours((Gérer cours))
+  GererEleves((Gérer élèves))
+  OuvrirSeance((Ouvrir séance de présence))
+  CloturerSeance((Clôturer séance))
+  MarquerPresences((Marquer présences))
+  ViderPresences((Vider les présences))
+  ValiderRequetes((Valider requêtes d'absence))
+  ValiderPermissions((Valider permissions d'absence))
+  ConsulterNotifications((Consulter notifications))
+  SoumettreRequete((Soumettre requête d'absence))
+  SoumettrePermission((Soumettre permission d'absence))
+  ScannerQR((Scanner QR pour présence))
+  GenererRapports((Générer rapports))
+
+  Admin --> SeConnecter
+  Professeur --> SeConnecter
+  Parent --> SeConnecter
+  Eleve --> SeConnecter
+
+  Admin --> VoirDashboard
+  Professeur --> VoirDashboard
+
+  Admin --> GererUtilisateurs
+  Admin --> GererClasses
+  Admin --> GererCours
+  Admin --> GererEleves
+
+  Admin --> OuvrirSeance
+  Admin --> CloturerSeance
+  Admin --> MarquerPresences
+  Admin --> ViderPresences
+
+  Professeur --> GererCours
+  Professeur --> GererEleves
+  Professeur --> OuvrirSeance
+  Professeur --> CloturerSeance
+  Professeur --> MarquerPresences
+
+  Admin --> ValiderRequetes
+  Admin --> ValiderPermissions
+  Professeur --> ValiderRequetes
+
+  Admin --> ConsulterNotifications
+  Professeur --> ConsulterNotifications
+  Parent --> ConsulterNotifications
+  Eleve --> ConsulterNotifications
+
+  Parent --> SoumettreRequete
+  Parent --> SoumettrePermission
+  Eleve --> SoumettreRequete
+
+  Eleve --> ScannerQR
+  Admin --> GenererRapports
+  Professeur --> GenererRapports

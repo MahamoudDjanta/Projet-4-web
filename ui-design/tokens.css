@@ -1,0 +1,15 @@
+:root {
+  --font-family: 'Outfit', system-ui, sans-serif;
+  --primary: #E8002D;
+  --primary-dark: #C8001F;
+  --background: #FFFFFF;
+  --surface: #FAFAFA;
+  --text: #111111;
+  --text-muted: #6B7280;
+  --border: #F0F0F0;
+  --accent-soft: #FFF1F3;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --transition: 200ms ease;
+}
